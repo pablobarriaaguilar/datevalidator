@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Rent
+<form asp-action="Create" method="POST">
+<label asp-for="Name">Nombre</label>
+<input asp-for="Name">
+<span asp-validation-for="Name"></span>
+<label asp-for="Dt">Fecha de arriendo</label>
+<input asp-for="Dt">
+<span asp-validation-for="Dt"></span>
+<button type="submit"> enviar</button>
+</form>
